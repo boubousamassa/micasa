@@ -753,7 +753,7 @@ color: #059748;
 .rooms1 .owl-theme .owl-nav [class*=owl-]:hover {
     transform: scale(0.9);
     background: transparent;
-    border: 1px solid #b19777;
+    border: 1px solid #059748;
     color: #FFF;
 }
 @media screen and (max-width: 768px) {
@@ -897,7 +897,7 @@ color: #059748;
     color: #fff;
 }
 .nav-scroll .logo-img {
-    width: 100px;
+    width: 80px;
 }
 .nav-scroll .logo-img {
     margin-bottom: 0px;
@@ -941,7 +941,7 @@ color: #059748;
     position: relative;
     color: #059748;
     margin-bottom: 0;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     letter-spacing: 1px;
     text-align: center;
 }
@@ -968,7 +968,7 @@ color: #059748;
 }
 .logo-img {
     padding: 20px 0;
-    width: 100px;
+    width: 80px;
     text-align: center;
 }
 .dropdown .nav-link i {
@@ -1067,14 +1067,14 @@ color: #059748;
     }
     .logo-wrapper {
         float: left;
-        padding: 26px 0 26px 15px;
+        padding: 5px 0 0px 5px;
     }
     .nav-scroll .logo-wrapper {
-        padding: 26px 0 26px 15px;
+        padding: 5px 0 0px 5px;
         background-color: transparent;
     }
     .nav-scroll .logo-img {
-        width: 100px;
+        width: 80px;
     }
     .navbar .logo {
         text-align: left;
@@ -1083,7 +1083,7 @@ color: #059748;
     .nav-scroll .logo {}
     .logo-img {
         margin-bottom: 0px;
-        width: 100px;
+        width: 80px;
         padding: 0;
     }
     .navbar button {
@@ -1105,7 +1105,7 @@ color: #059748;
     }
     .navbar .container {
         max-width: 100%;
-        padding: 0;
+        /* padding: 0; */
     }
     .navbar .nav-link {
         margin: 0px auto !important;
@@ -2097,7 +2097,7 @@ hr {
     line-height: 1.5em;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
-    color: #C19D60;
+    color: #059748;
 }
 .video-fullscreen-video {
     height: 100%;
@@ -2442,7 +2442,7 @@ color: #059748;
 .rooms2 .caption h3,
 .rooms2 .caption h3 a {
     font-size: 24px;
-    color: #ab8a62;
+    color: #059748;
     margin-bottom: 0px;
 }
 .rooms2 .caption h3 span {
@@ -2494,7 +2494,7 @@ color: #059748;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 15px;
     background: transparent;
-    border: 1px solid #ab8a62;
+    border: 1px solid #42c07d;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 3px 12px;
@@ -2572,7 +2572,7 @@ hr.border-2 {
 }
 .reservations .icon span {
     font-size: 40px;
-    color: #8e6d45;
+    color: #42c07d;
 }
 .reservations .icon.color-1 span {
     font-size: 40px;
@@ -2588,7 +2588,7 @@ hr.border-2 {
 }
 .reservations .text a {
     font-size: 27px;
-    color: #8e6d45;
+    color: #42c07d;
     letter-spacing: -1px;
 }
 .reservations .text a.color-1 {
@@ -2899,8 +2899,8 @@ hr.border-2 {
 .rooms-page .owl-theme .owl-nav [class*=owl-]:hover {
     transform: scale(0.9);
     background: transparent;
-    border: 1px solid #b19777;
-    color: #b19777;
+    border: 1px solid #059748;
+    color: #059748;
 }
 @media screen and (max-width: 768px) {
     .rooms-page .owl-nav {
@@ -4616,7 +4616,7 @@ button.mfp-arrow {
     font-weight: 400;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    background: #ab8a62;
+    background: #42c07d;
     color: #fff;
     padding: 13px 22px;
     margin: 0;
@@ -4702,7 +4702,7 @@ button.mfp-arrow {
     font-weight: 400;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    background: #ab8a62;
+    background: #42c07d;
     color: #fff;
     padding: 13px 22px;
     margin: 0;
