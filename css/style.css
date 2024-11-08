@@ -3581,9 +3581,13 @@ button.mfp-arrow {
 .form1 label {
     display: none;
 }
+.form1 .col0 {
+    float: left;
+    width: 13%;
+}
 .form1 .col1 {
     float: left;
-    width: 20%;
+    width: 13%;
 }
 .form1 .col2 {
     float: left;
