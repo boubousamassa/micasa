@@ -859,12 +859,12 @@
                                 <h4>Formulaire de réservation d'hôtel</h4>
                             </div>
                             <div class="booking-inner clearfix">
-                                <form action="https://duruthemes.com/demo/html/cappa/demo1-light/rooms2.html"
-                                    class="form1 clearfix">
+                                <form id="reservationForm" action="https://duruthemes.com/demo/html/cappa/demo1-light/rooms2.html" class="form1 clearfix">
                                     <div class="row">
                                         <div class="select1_wrapper">
                                             <div class="select1_inner">
-                                                <select class="select2 select" style="width: 100%">
+                                                <label for="location">Location</label>
+                                                <select id="location" class="select2 select" style="width: 100%">
                                                     <option value="MiCasa_ACI">MiCasa ACI</option>
                                                     <option value="MiCasa_GOLF">MiCasa_GOLF</option>
                                                 </select>
@@ -872,27 +872,25 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="input1_wrapper">
-                                                <label>Arrivée</label>
+                                                <label for="arrival">Arrivée</label>
                                                 <div class="input1_inner">
-                                                    <input type="text" class="form-control input datepicker"
-                                                        placeholder="Arrivée">
+                                                    <input type="text" id="arrival" class="form-control input datepicker" placeholder="Arrivée">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="input1_wrapper">
-                                                <label>Départ</label>
+                                                <label for="departure">Départ</label>
                                                 <div class="input1_inner">
-                                                    <input type="text" class="form-control input datepicker"
-                                                        placeholder="Départ">
+                                                    <input type="text" id="departure" class="form-control input datepicker" placeholder="Départ">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="select1_wrapper">
-                                                <label>Adultes</label>
+                                                <label for="adults">Adultes</label>
                                                 <div class="select1_inner">
-                                                    <select class="select2 select" style="width: 100%">
+                                                    <select id="adults" class="select2 select" style="width: 100%">
                                                         <option value="0">Adultes</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -904,9 +902,9 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="select1_wrapper">
-                                                <label>Enfants</label>
+                                                <label for="children">Enfants</label>
                                                 <div class="select1_inner">
-                                                    <select class="select2 select" style="width: 100%">
+                                                    <select id="children" class="select2 select" style="width: 100%">
                                                         <option value="0">Enfants</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -917,11 +915,31 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn-form1-submit mt-15">Vérifier la
-                                                disponibilité</button>
+                                            <button type="submit" class="btn-form1-submit mt-15">Vérifier la disponibilité</button>
                                         </div>
                                     </div>
                                 </form>
+                                <script>
+                                    document.getElementById("reservationForm").addEventListener("submit", function(event) {
+                                        event.preventDefault(); // Empêche l'envoi réel du formulaire
+                                
+                                        // Récupère les valeurs des champs
+                                        const location = document.getElementById("location").value;
+                                        const arrival = document.getElementById("arrival").value;
+                                        const departure = document.getElementById("departure").value;
+                                        const adults = document.getElementById("adults").value;
+                                        const children = document.getElementById("children").value;
+                                
+                                        // Affiche les valeurs dans la console
+                                        console.log("Location:", location);
+                                        console.log("Arrivée:", arrival);
+                                        console.log("Départ:", departure);
+                                        console.log("Adultes:", adults);
+                                        console.log("Enfants:", children);
+                                
+                                        // Tu peux ensuite rediriger ou effectuer d'autres actions ici, si nécessaire
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -1025,6 +1043,7 @@
         </div>
     </footer>
     <!-- jQuery -->
+     
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
