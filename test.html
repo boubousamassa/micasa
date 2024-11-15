@@ -1,0 +1,82 @@
+<section class="rooms1 section-padding bg-cream" data-scroll-index="1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-subtitle" id="residenceSubtitle">Résidence MiCasa</div>
+                <div class="section-title" id="roomsTitle">Chambres & Suites Golf</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="item">
+                    <div class="position-re o-hidden">
+                        <img src="img/rooms/1.jpg" alt="">
+                    </div>
+                    <span class="category" id="book1"><a href="rooms2.html">Reserver</a></span>
+                    <div class="con">
+                        <h6 id="price1"><a href="room-details.html">60000fcfa / Nuit</a></h6>
+                        <h5 id="roomTitle1"><a href="room-details.html">Suite Junior</a></h5>
+                        <div class="line"></div>
+                        <div class="row facilities">
+                            <div class="col col-md-7">
+                                <ul>
+                                    <li><i class="flaticon-bed"></i></li>
+                                    <li><i class="flaticon-bath"></i></li>
+                                    <li><i class="flaticon-breakfast"></i></li>
+                                    <li><i class="flaticon-towel"></i></li>
+                                </ul>
+                            </div>
+                            <div class="col col-md-5 text-end">
+                                <div class="permalink"><a href="room-details.html" id="details1">Détails <i class="ti-arrow-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Répétez cette structure pour chaque chambre -->
+        </div>
+    </div>
+</section>
+
+
+<script>
+function changeLanguage() {
+    const language = document.getElementById("languageSelector").value;
+
+    if (language === "en") {
+        // Traduction en anglais
+        document.getElementById("residenceSubtitle").innerText = "MiCasa Residence";
+        document.getElementById("roomsTitle").innerText = "Rooms & Golf Suites";
+
+        // Pour chaque chambre
+        document.getElementById("book1").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price1").innerHTML = "<a href='room-details.html'>$100 / Night</a>";
+        document.getElementById("roomTitle1").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details1").innerHTML = "Details <i class='ti-arrow-right'></i>";
+
+        // Répétez pour chaque chambre
+        // Exemple :
+        // document.getElementById("book2").innerHTML = "<a href='rooms2.html'>Book</a>";
+        // document.getElementById("price2").innerHTML = "<a href='room-details.html'>$100 / Night</a>";
+        // document.getElementById("roomTitle2").innerHTML = "<a href='room-details.html'>Senior Suite</a>";
+        // document.getElementById("details2").innerHTML = "Details <i class='ti-arrow-right'></i>";
+    } else if (language === "fr") {
+        // Retour en français
+        document.getElementById("residenceSubtitle").innerText = "Résidence MiCasa";
+        document.getElementById("roomsTitle").innerText = "Chambres & Suites Golf";
+
+        // Pour chaque chambre
+        document.getElementById("book1").innerHTML = "<a href='rooms2.html'>Reserver</a>";
+        document.getElementById("price1").innerHTML = "<a href='room-details.html'>60000fcfa / Nuit</a>";
+        document.getElementById("roomTitle1").innerHTML = "<a href='room-details.html'>Suite Junior</a>";
+        document.getElementById("details1").innerHTML = "Détails <i class='ti-arrow-right'></i>";
+
+        // Répétez pour chaque chambre
+        // Exemple :
+        // document.getElementById("book2").innerHTML = "<a href='rooms2.html'>Reserver</a>";
+        // document.getElementById("price2").innerHTML = "<a href='room-details.html'>60000fcfa / Nuit</a>";
+        // document.getElementById("roomTitle2").innerHTML = "<a href='room-details.html'>Suite Senior</a>";
+        // document.getElementById("details2").innerHTML = "Détails <i class='ti-arrow-right'></i>";
+    }
+}
+</script>

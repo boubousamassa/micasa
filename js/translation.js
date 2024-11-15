@@ -113,32 +113,46 @@ function changeLanguage() {
         document.getElementById('promo_video').innerText = "Promotional Video";
 
         // Services et commodités de l'hôtel
-        document.getElementById('subtitle_services').innerText = "Our Services";
-        document.getElementById('title_services').innerText = "Hotel Services and Amenities";
-        document.getElementById('service_shuttle').innerText = "Shuttle Service";
-        document.getElementById('service_shuttle_desc').innerText = "We will pick you up from the airport, ensuring a comfortable journey.";
-        document.getElementById('service_room').innerText = "Room Service";
-        document.getElementById('service_room_desc').innerText = "Room service once a day. Swimming pool, peaceful space, comfortable stay.";
-        document.getElementById('service_pool').innerText = "Swimming Pool";
-        document.getElementById('service_pool_desc').innerText = "Enjoy our pool, an oasis of relaxation and leisure.";
-        document.getElementById('service_wifi').innerText = "Fiber Internet";
-        document.getElementById('service_wifi_desc').innerText = "High-speed Wi-Fi, keeping you connected at all times.";
-        document.getElementById('service_breakfast').innerText = "Breakfast";
-        document.getElementById('service_breakfast_desc').innerText = "Start your day with a delicious breakfast, served fresh.";
+        document.getElementById("servicesSubtitle").innerText = "Our Services";
+        document.getElementById("servicesTitle").innerText = "Hotel Services and Amenities";
+        document.getElementById("service1Title").innerText = "Shuttle";
+        document.getElementById("service1Desc").innerText = "We will pick you up from the airport while you enjoy a comfortable ride.";
+        document.getElementById("service2Title").innerText = "Room Service";
+        document.getElementById("service2Desc").innerText = "Room service once a day for optimal comfort during your stay.";
+        document.getElementById("service3Title").innerText = "Swimming Pool";
+        document.getElementById("service3Desc").innerText = "Relax in our outdoor pool.";
+        document.getElementById("service4Title").innerText = "Fiber Internet";
+        document.getElementById("service4Desc").innerText = "High-speed Wi-Fi to stay connected wherever you are.";
+        document.getElementById("service5Title").innerText = "Breakfast";
+        document.getElementById("service5Desc").innerText = "A full breakfast to start the day off right.";
 
-        // Services et commodités de l'hôtel
-        document.getElementById('servicesSubtitle').innerText = "Our Services";
-        document.getElementById('servicesTitle').innerText = "Hotel Services and Amenities";
-        document.getElementById('service1Title').innerText = "Shuttle";
-        document.getElementById('service1Desc').innerText = "We will pick you up at the airport while you are comfortably seated during your journey, mus nellentesque habitant.";
-        document.getElementById('service2Title').innerText = "Room Service";
-        document.getElementById('service2Desc').innerText = "Room service once a day. Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.";
-        document.getElementById('service3Title').innerText = "Swimming Pool";
-        document.getElementById('service3Desc').innerText = "Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.";
-        document.getElementById('service4Title').innerText = "Fiber Internet";
-        document.getElementById('service4Desc').innerText = "WiFi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.";
-        document.getElementById('service5Title').innerText = "Breakfast";
-        document.getElementById('service5Desc').innerText = "Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant.";
+        // les chambre golf
+        document.getElementById("residenceSubtitle").innerText = "MiCasa Residence";
+        document.getElementById("roomsTitle").innerText = "Rooms & Golf Suites";
+
+        // Pour chaque chambre
+        document.getElementById("book1").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price1").innerHTML = "<a href='room-details.html'>60.000f / Night</a>";
+        document.getElementById("roomTitle1").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details1").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book2").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price2").innerHTML = "<a href='room-details.html'>60.000f / Night</a>";
+        document.getElementById("roomTitle2").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details2").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book3").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price3").innerHTML = "<a href='room-details.html'>60.000f / Night</a>";
+        document.getElementById("roomTitle3").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details3").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book4").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price4").innerHTML = "<a href='room-details.html'>80.000f / Night</a>";
+        document.getElementById("roomTitle4").innerHTML = "<a href='room-details.html'>Senior Suite</a>";
+        document.getElementById("details4").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book5").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price5").innerHTML = "<a href='room-details.html'>80.000f / Night</a>";
+        document.getElementById("roomTitle5").innerHTML = "<a href='room-details.html'>Senior Suite</a>";
+        document.getElementById("details5").innerHTML = "Details <i class='ti-arrow-right'></i>";
+
+        
 
     } else if (language === "fr") {
         // Revenir au texte en français
@@ -253,31 +267,44 @@ function changeLanguage() {
         document.getElementById('promo_video').innerText = "Vidéo promotionnelle";
 
         //Services et commodités de l'hôtel
-        document.getElementById('subtitle_services').innerText = "Nos Services";
-        document.getElementById('title_services').innerText = "Services et commodités de l'hôtel";
-        document.getElementById('service_shuttle').innerText = "Navette";
-        document.getElementById('service_shuttle_desc').innerText = "Nous viendrons vous chercher à l'aéroport pendant que vous serez confortablement installé pendant votre trajet, habitant mus nellentesque.";
-        document.getElementById('service_room').innerText = "Service de chambre";
-        document.getElementById('service_room_desc').innerText = "Service de chambre 1 fois/jours Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.";
-        document.getElementById('service_pool').innerText = "Piscine";
-        document.getElementById('service_pool_desc').innerText = "Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.Swimming pool";
-        document.getElementById('service_wifi').innerText = "Internet fibre";
-        document.getElementById('service_wifi_desc').innerText = "Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.";
-        document.getElementById('service_breakfast').innerText = "Petit-déjeuner";
-        document.getElementById('service_breakfast_desc').innerText = "Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant";
+        document.getElementById("servicesSubtitle").innerText = "Nos Services";
+        document.getElementById("servicesTitle").innerText = "Services et commodités de l'hôtel";
+        document.getElementById("service1Title").innerText = "Navette";
+        document.getElementById("service1Desc").innerText = "Nous viendrons vous chercher à l'aéroport pendant que vous serez confortablement installé pendant votre trajet.";
+        document.getElementById("service2Title").innerText = "Service de chambre";
+        document.getElementById("service2Desc").innerText = "Service de chambre 1 fois/jours, un confort optimal pour un séjour agréable.";
+        document.getElementById("service3Title").innerText = "Piscine";
+        document.getElementById("service3Desc").innerText = "Détendez-vous dans notre piscine extérieure.";
+        document.getElementById("service4Title").innerText = "Internet fibre";
+        document.getElementById("service4Desc").innerText = "Wifi haut débit pour vous connecter où que vous soyez.";
+        document.getElementById("service5Title").innerText = "Petit-déjeuner";
+        document.getElementById("service5Desc").innerText = "Un petit-déjeuner complet pour bien commencer la journée.";
 
-        // Services et commodités de l'hôtel
-        document.getElementById('servicesSubtitle').innerText = "Nos Services";
-        document.getElementById('servicesTitle').innerText = "Services et commodités de l'hôtel";
-        document.getElementById('service1Title').innerText = "Navette";
-        document.getElementById('service1Desc').innerText = "Nous viendrons vous chercher à l'aéroport pendant que vous serez confortablement installé pendant votre trajet, habitant mus nellentesque.";
-        document.getElementById('service2Title').innerText = "Service de chambre";
-        document.getElementById('service2Desc').innerText = "Service de chambre 1 fois/jours Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.";
-        document.getElementById('service3Title').innerText = "Piscine";
-        document.getElementById('service3Desc').innerText = "Swimming pool tincidunt nise ace park norttito sit space, mus nellentesque habitant.";
-        document.getElementById('service4Title').innerText = "Internet fibre";
-        document.getElementById('service4Desc').innerText = "Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.";
-        document.getElementById('service5Title').innerText = "Petit-déjeuner";
-        document.getElementById('service5Desc').innerText = "Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant";
+        // les chambre golf
+        document.getElementById("residenceSubtitle").innerText = "MiCasa Residence";
+        document.getElementById("roomsTitle").innerText = "Rooms & Golf Suites";
+        // Pour chaque chambre
+        document.getElementById("book1").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price1").innerHTML = "<a href='room-details.html'>60.000f / Night</a>";
+        document.getElementById("roomTitle1").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details1").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book2").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price2").innerHTML = "<a href='room-details.html'>60.000f / Night</a>";
+        document.getElementById("roomTitle2").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details2").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book3").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price3").innerHTML = "<a href='room-details.html'>60.000f / Night</a>";
+        document.getElementById("roomTitle3").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
+        document.getElementById("details3").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book4").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price4").innerHTML = "<a href='room-details.html'>$150 / Night</a>";
+        document.getElementById("roomTitle4").innerHTML = "<a href='room-details.html'>Senior Suite</a>";
+        document.getElementById("details4").innerHTML = "Details <i class='ti-arrow-right'></i>";
+        document.getElementById("book5").innerHTML = "<a href='rooms2.html'>Book</a>";
+        document.getElementById("price5").innerHTML = "<a href='room-details.html'>$150 / Night</a>";
+        document.getElementById("roomTitle5").innerHTML = "<a href='room-details.html'>Senior Suite</a>";
+        document.getElementById("details5").innerHTML = "Details <i class='ti-arrow-right'></i>";
+
+        
     }
 }
