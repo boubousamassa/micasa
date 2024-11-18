@@ -58,96 +58,114 @@
     </nav>
     <!-- Slider -->
     <header class="header slider-fade">
+        <!-- Menu de sélection de la langue -->
         <div class="owl-carousel owl-theme">
-            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <!-- Slide 1 -->
             <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/slider/2.jpg">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h4>Hôtel de luxe et meilleur complexe hôtelier</h4>
-                                <h1>Profitez d'une expérience de luxe</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Chambres & Suites</span></a> </div>
+                                <h4 id="slide1-title">Profitez de chaque instant de votre séjour avec Micasa</h4>
+                                <h1 id="slide1-subtitle">Vivez l’Expérience du Confort et de la Tranquillité</h1>
+                                <div class="butn-light mt-30 mb-30">
+                                    <a href="#" data-scroll-nav="1">
+                                        <span id="slide1-button">Appartements et Suites</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Slide 2 -->
             <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/slider/3.jpg">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h4>Endroit unique pour se détendre et profiter</h4>
-                                <h1>La base parfaite pour vous</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Chambres &
-                                            Suites</span></a> </div>
+                                <h4 id="slide2-title">Endroit unique pour se détendre et profiter</h4>
+                                <h1 id="slide2-subtitle">La base parfaite pour vous</h1>
+                                <div class="butn-light mt-30 mb-30">
+                                    <a href="#" data-scroll-nav="1">
+                                        <span id="slide2-button">Appartements et Suites</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Slide 3 -->
             <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/slider/1.jpg">
                 <div class="v-middle caption">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-10 offset-md-1">
-                                <h4>
-                                    L'expérience de luxe ultime</h4>
-                                <h1>Profitez des meilleurs moments de la vie</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="#" data-scroll-nav="1"><span>Chambres &
-                                            Suites</span></a> </div>
+                                <h4 id="slide3-title">L'expérience de luxe ultime</h4>
+                                <h1 id="slide3-subtitle">Profitez des meilleurs moments de la vie</h1>
+                                <div class="butn-light mt-30 mb-30">
+                                    <a href="#" data-scroll-nav="1">
+                                        <span id="slide3-button">Appartements et Suites</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- slider reservation -->
+        
+        <!-- Slider Reservation -->
         <div class="reservation">
             <a href="tel:8551004444">
                 <div class="icon d-flex justify-content-center align-items-center">
                     <i class="flaticon-call"></i>
                 </div>
-                <div class="call"><span>+223 20 29 08 07</span> <br>Réservation</div>
+                <div class="call">
+                    <span id="reservation-phone">+223 20 29 08 07</span> <br>
+                    <span id="reservation-label">Réservation</span>
+                </div>
             </a>
         </div>
+        
     </header>
     <!-- Booking Search -->
     <div class="booking-wrapper">
         <div class="container">
             <div class="booking-inner clearfix">
-                <form action="https://duruthemes.com/demo/html/cappa/demo1-light/rooms.html" class="form1 clearfix">
+                <!-- Formulaire -->
+                <form id="booking-form" class="form1 clearfix">
                     <div class="col0 c0">
                         <div class="select1_wrapper">
-                            <label>Choisir</label>
+                            <label id="label_location">Choisir</label>
                             <div class="select1_inner">
                                 <select class="select2 select" style="width: 100%">
-                                    <option value="1">MiCasa ACI</option>
-                                    <option value="2">MiCasa Golf</option>
+                                    <option value="MiCasa ACI">MiCasa ACI</option>
+                                    <option value="MiCasa Golf">MiCasa Golf</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="col1 c1">
                         <div class="input1_wrapper">
-                            <label>Arrivée</label>
+                            <label id="label_arrival">Arrivée</label>
                             <div class="input1_inner">
-                                <input type="text" class="form-control input datepicker" placeholder="Arrivée">
+                                <input type="text" id="arrival" class="form-control input datepicker" placeholder="Arrivée">
                             </div>
                         </div>
                     </div>
                     <div class="col1 c2">
                         <div class="input1_wrapper">
-                            <label>Départ</label>
+                            <label id="label_departure">Départ</label>
                             <div class="input1_inner">
-                                <input type="text" class="form-control input datepicker" placeholder="Départ">
+                                <input type="text" id="departure" class="form-control input datepicker" placeholder="Départ">
                             </div>
                         </div>
                     </div>
                     <div class="col2 c3">
                         <div class="select1_wrapper">
-                            <label>Adultes</label>
+                            <label id="label_adults">Adultes</label>
                             <div class="select1_inner">
                                 <select class="select2 select" style="width: 100%">
                                     <option value="1">1 Adulte</option>
@@ -160,10 +178,9 @@
                     </div>
                     <div class="col2 c4">
                         <div class="select1_wrapper">
-                            <label>Enfants</label>
+                            <label id="label_children">Enfants</label>
                             <div class="select1_inner">
                                 <select class="select2 select" style="width: 100%">
-                                    <option value="1">Enfants</option>
                                     <option value="1">1 Enfant</option>
                                     <option value="2">2 Enfants</option>
                                     <option value="3">3 Enfants</option>
@@ -174,9 +191,9 @@
                     </div>
                     <div class="col2 c5">
                         <div class="select1_wrapper">
-                            <label>Chambres</label>
+                            <label id="label_rooms">Chambres</label>
                             <div class="select1_inner">
-                                <select class="select2 select" style="width: 100%">
+                                <select id="rooms" class="select2 select" style="width: 100%">
                                     <option value="1">1 Chambre</option>
                                     <option value="2">2 Chambres</option>
                                     <option value="3">3 Chambres</option>
@@ -186,7 +203,7 @@
                         </div>
                     </div>
                     <div class="col3 c6">
-                        <button type="submit" class="btn-form1-submit">Reserver</button>
+                        <button type="submit" id="check_availability" class="btn-form1-submit">Reserver</button>
                     </div>
                 </form>
             </div>
@@ -197,48 +214,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
-                    <div class="section-subtitle">Résidence MiCasa</div>
-                    <div class="section-title">Profitez d'une expérience de luxe</div>
-                    <p>Welcome to the best five-star deluxe hotel in New York. Hotel elementum sesue the aucan
-                        vestibulum aliquam justo in sapien rutrum volutpat. Donec in quis the pellentesque velit. Donec
-                        id velit ac arcu posuere blane.</p>
-                    <p>Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius
-                        natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant
-                        morbine.</p>
+                    <div class="section-subtitle" id="aboutSubtitle">Résidence MiCasa</div>
+                    <div class="section-title" id="aboutTitle">Découvrez l’élégance et le confort absolus</div>
+                    <p id="aboutDescription1">Bienvenue dans votre espace de confort et de raffinement au cœur de l’Afrique. À Micasa, nous vous proposons des appart’hôtels haut de gamme, conçus pour répondre aux attentes des voyageurs d’affaires et de ceux en quête de sérénité. 
+                        Nos appartements meublés allient le style moderne aux influences locales, créant un environnement chaleureux et fonctionnel.
+                        </p>
+                    <p id="aboutDescription2">Profitez de nos services personnalisés pour un séjour sans souci, avec un personnel attentif et disponible 24/7, des espaces de réunion modernes, et des installations de bien-être pour une relaxation totale.</p>
                     <!-- call -->
-                    <div class="reservations">
+                    <div class="reservations" id="reservationCall">
                         <div class="icon"><span class="flaticon-call"></span></div>
                         <div class="text">
-                            <p>Reservation</p> <a href="tel:855-100-4444">+223 xx xx xx xx</a>
+                            <p id="reservationText">Réservez dès maintenant</p> 
+                            <a href="tel:855-100-4444" id="reservationPhone">+223 20 29 08 08</a> <br>
+                            <a href="tel:855-100-4444" id="reservationPhone1">+223 20 29 08 09</a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30">
+                    <img src="img/rooms/8.jpg" alt="" class="mt-90 mb-30" >
                 </div>
                 <div class="col col-md-3 animate-box" data-animate-effect="fadeInUp">
-                    <img src="img/rooms/2.jpg" alt="">
+                    <img src="img/rooms/2.jpg" alt="" >
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- Rooms -->
     <section class="rooms1 section-padding bg-cream" data-scroll-index="1">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-subtitle">Résidence MiCasa</div>
-                    <div class="section-title">Chambres & Suites ACI</div>
+                    <div class="section-subtitle" id="residenceSubtitle">Résidence MiCasa</div>
+                    <div class="section-title" id="roomsTitle">Chambres & Suites ACI</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="item">
-                        <div class="position-re o-hidden"> <img src="img/rooms/1.jpg" alt=""> </div> <span
-                            class="category"><a href="rooms2.html">Reserver</a></span>
+                        <div class="position-re o-hidden"> <img src="img/rooms/1.jpg" alt=""> </div>
+                        <span class="category"><a href="rooms2.html" id="bookACI1">Reserver</a></span>
                         <div class="con">
-                            <h6><a href="room-details.html">110000fcfa / Nuit</a></h6>
-                            <h5><a href="room-details.html">Suite Junior</a> </h5>
+                            <h6><a href="room-details.html" id="priceACI1">110000fcfa / Nuit</a></h6>
+                            <h5><a href="room-details.html" id="roomTitleACI1">Suite Junior</a></h5>
                             <div class="line"></div>
                             <div class="row facilities">
                                 <div class="col col-md-7">
@@ -250,8 +268,7 @@
                                     </ul>
                                 </div>
                                 <div class="col col-md-5 text-end">
-                                    <div class="permalink"><a href="room-details.html">Détails <i
-                                                class="ti-arrow-right"></i></a></div>
+                                    <div class="permalink"><a href="room-details.html" id="detailsACI1">Détails <i class="ti-arrow-right"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -259,11 +276,11 @@
                 </div>
                 <div class="col-md-4">
                     <div class="item">
-                        <div class="position-re o-hidden"> <img src="img/rooms/2.jpg" alt=""> </div> <span
-                            class="category"><a href="rooms2.html">Reserver</a></span>
+                        <div class="position-re o-hidden"> <img src="img/rooms/2.jpg" alt=""> </div>
+                        <span class="category"><a href="rooms2.html" id="bookACI2">Reserver</a></span>
                         <div class="con">
-                            <h6><a href="room-details.html">110000fcfa / Nuit</a></h6>
-                            <h5><a href="room-details.html">Suite Junior</a></h5>
+                            <h6><a href="room-details.html" id="priceACI2">110000fcfa / Nuit</a></h6>
+                            <h5><a href="room-details.html" id="roomTitleACI2">Suite Junior</a></h5>
                             <div class="line"></div>
                             <div class="row facilities">
                                 <div class="col col-md-7">
@@ -275,8 +292,7 @@
                                     </ul>
                                 </div>
                                 <div class="col col-md-5 text-end">
-                                    <div class="permalink"><a href="room-details.html">Détails <i
-                                                class="ti-arrow-right"></i></a></div>
+                                    <div class="permalink"><a href="room-details.html" id="detailsACI2">Détails <i class="ti-arrow-right"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -284,11 +300,11 @@
                 </div>
                 <div class="col-md-4">
                     <div class="item">
-                        <div class="position-re o-hidden"> <img src="img/rooms/3.jpg" alt=""> </div> <span
-                            class="category"><a href="rooms2.html">Reserver</a></span>
+                        <div class="position-re o-hidden"> <img src="img/rooms/3.jpg" alt=""> </div>
+                        <span class="category"><a href="rooms2.html" id="bookACI3">Reserver</a></span>
                         <div class="con">
-                            <h6><a href="room-details.html">110000fcfa / Nuit</a></h6>
-                            <h5><a href="room-details.html">Suite Junior</a></h5>
+                            <h6><a href="room-details.html" id="priceACI3">110000fcfa / Nuit</a></h6>
+                            <h5><a href="room-details.html" id="roomTitleACI3">Suite Junior</a></h5>
                             <div class="line"></div>
                             <div class="row facilities">
                                 <div class="col col-md-7">
@@ -300,8 +316,7 @@
                                     </ul>
                                 </div>
                                 <div class="col col-md-5 text-end">
-                                    <div class="permalink"><a href="room-details.html">Détails <i
-                                                class="ti-arrow-right"></i></a></div>
+                                    <div class="permalink"><a href="room-details.html" id="detailsACI3">Détails <i class="ti-arrow-right"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -309,11 +324,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="item">
-                        <div class="position-re o-hidden"> <img src="img/rooms/4.jpg" alt=""> </div> <span
-                            class="category"><a href="rooms2.html">Reserver</a></span>
+                        <div class="position-re o-hidden"> <img src="img/rooms/4.jpg" alt=""> </div>
+                        <span class="category"><a href="rooms2.html" id="bookACI4">Reserver</a></span>
                         <div class="con">
-                            <h6><a href="room-details.html">80 000 / NUIT</a></h6>
-                            <h5><a href="room-details.html">Suite Senior</a></h5>
+                            <h6><a href="room-details.html" id="priceACI4">175.000f / Nuit</a></h6>
+                            <h5><a href="room-details.html" id="roomTitleACI4">Suite Senior</a></h5>
                             <div class="line"></div>
                             <div class="row facilities">
                                 <div class="col col-md-7">
@@ -325,8 +340,7 @@
                                     </ul>
                                 </div>
                                 <div class="col col-md-5 text-end">
-                                    <div class="permalink"><a href="room-details.html">Details <i
-                                                class="ti-arrow-right"></i></a></div>
+                                    <div class="permalink"><a href="room-details.html" id="detailsACI4">Détails <i class="ti-arrow-right"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -334,11 +348,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="item">
-                        <div class="position-re o-hidden"> <img src="img/rooms/7.jpg" alt=""> </div> <span
-                            class="category"><a href="rooms2.html">Reserver</a></span>
+                        <div class="position-re o-hidden"> <img src="img/rooms/7.jpg" alt=""> </div>
+                        <span class="category"><a href="rooms2.html" id="bookACI5">Reserver</a></span>
                         <div class="con">
-                            <h6><a href="room-details.html">80 000 / NUIT</a></h6>
-                            <h5><a href="room-details.html">Suite Senior</a></h5>
+                            <h6><a href="room-details.html" id="priceACI5">175.000f / Nuit</a></h6>
+                            <h5><a href="room-details.html" id="roomTitleACI5">Suite Senior</a></h5>
                             <div class="line"></div>
                             <div class="row facilities">
                                 <div class="col col-md-7">
@@ -350,8 +364,7 @@
                                     </ul>
                                 </div>
                                 <div class="col col-md-5 text-end">
-                                    <div class="permalink"><a href="room-details.html">Details <i
-                                                class="ti-arrow-right"></i></a></div>
+                                    <div class="permalink"><a href="room-details.html" id="detailsACI5">Détails <i class="ti-arrow-right"></i></a></div>
                                 </div>
                             </div>
                         </div>
@@ -360,6 +373,7 @@
             </div>
         </div>
     </section>
+
     <P></P>
     <section class="rooms1 section-padding bg-cream" data-scroll-index="1">
         <div class="container">
@@ -541,6 +555,14 @@
                 </div>
                 <div class="col-md-4">
                     <div class="single-facility animate-box" data-animate-effect="fadeInUp">
+                        <span class="flaticon-bed"></span>
+                        <h5 id="service6Title">Salle de sport</h5>
+                        <p id="service6Desc">Équipements modernes et variés pour votre entraînement : machines de musculation, cardio-training et espace de poids libres.</p>
+                        <div class="facility-shape"> <span class="flaticon-bed"></span> </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
                         <span class="flaticon-swimming"></span>
                         <h5 id="service3Title">Piscine</h5>
                         <p id="service3Desc">Détendez-vous dans notre piscine extérieure.</p>
@@ -601,8 +623,9 @@
                 <div class="col-md-4">
                     <div class="section-subtitle"><span id="best_prices">Meilleurs prix</span></div>
                     <div class="section-title"><span id="additional_services">Services supplémentaires</span></div>
-                    <p class="color-2" id="service_description_1">Les meilleurs prix pour vos vacances relaxantes.</p>
-                    <p class="color-2" id="service_description_2">Orci varius natoque penatibus et magnis disney parturient.</p>
+                    <p class="color-2" id="service_description_1">Des options pour un séjour encore plus agréable</p>
+                    <p class="color-2" id="service_description_2">Profitez de nos services additionnels conçus pour votre confort et votre tranquillité d’esprit. Que vous séjourniez chez nous pour affaires ou pour le loisir, Micasa vous propose des services personnalisés pour répondre à tous vos besoins.
+                    </p>
                     <div class="reservations mb-30">
                         <div class="icon"><span class="flaticon-call"></span></div>
                         <div class="text">
@@ -677,6 +700,51 @@
                                     <li><i class="ti-check"></i> <span id="service_6_safe">Coffre Fort</span></li>
                                     <li><i class="ti-check"></i> <span id="service_6_free">Gratuit</span></li>
                                     <li><i class="ti-close unavailable"></i> <span id="service_6_unavailable">Non disponible</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-card">
+                            <img src="img/pricing/8.jpg" alt="">
+                            <div class="desc">
+                                <div class="name" id="courses">Courses</div>
+                                <ul class="list-unstyled list">
+                                    <li><i class="ti-check"></i> <span id="cours1"></span></li>
+                                    <li><i class="ti-check"></i> <span id="cours2"></span></li>
+                                    <li><i class="ti-close unavailable"></i> <span id="cours3"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-card">
+                            <img src="img/pricing/9.jpg" alt="">
+                            <div class="desc">
+                                <div class="name" id="Restaurant">Restaurant</div>
+                                <ul class="list-unstyled list">
+                                    <li><i class="ti-check"></i> <span id="restaurant1"></span></li>
+                                    <li><i class="ti-check"></i> <span id="restaurant2"></span></li>
+                                    <li><i class="ti-close unavailable"></i> <span id="restaurant3"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-card">
+                            <img src="img/pricing/10.jpg" alt="">
+                            <div class="desc">
+                                <div class="name" id="pressing">Pressing</div>
+                                <ul class="list-unstyled list">
+                                    <li><i class="ti-check"></i> <span id="pressing1"></span></li>
+                                    <li><i class="ti-check"></i> <span id="pressing2"></span></li>
+                                    <li><i class="ti-close unavailable"></i> <span id="pressing3"></span></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pricing-card">
+                            <img src="img/pricing/11.jpg" alt="">
+                            <div class="desc">
+                                <div class="name" id="conference">Conférence</div>
+                                <ul class="list-unstyled list">
+                                    <li><i class="ti-check"></i> <span id="conference1"></span></li>
+                                    <li><i class="ti-check"></i> <span id="conference2"></span></li>
+                                    <li><i class="ti-close unavailable"></i> <span id="conference3"></span></li>
                                 </ul>
                             </div>
                         </div>
@@ -836,12 +904,14 @@
                 <div class="row">
                     <!-- Reservation -->
                     <div class="col-md-5 mb-30 mt-30">
-                        <h5>Chacune de nos chambres dispose d’une salle de bain privée, d’une connexion Wi-Fi, de la télévision par câble et d’une petit déjeuner.</h5>
+                        <h5>Chaque appartement est équipé d’une salle de bain privée, d’une connexion Wi-Fi haut débit et d’une télévision câblée pour un confort optimal. Profitez d’un cadre élégant et fonctionnel pour vos séjours professionnels.
+                        </h5>
                         <div class="reservations mb-30">
                             <div class="icon color-1"><span class="flaticon-call"></span></div>
                             <div class="text">
-                                <p class="color-1">Réservation</p> <a class="color-1" href="tel:855-100-4444">20 29
-                                    08 07</a>
+                                <p class="color-1">Réservation</p> 
+                                <a class="color-1" href="tel:+22320290808">20 29 08 08</a> <br>
+                                <a class="color-1" href="tel:+22320290807">20 29 08 07</a>
                             </div>
                         </div>
                         <p><i class="ti-check"></i><small>
@@ -859,7 +929,7 @@
                                     <div class="row">
                                         <div class="select1_wrapper">
                                             <div class="select1_inner">
-                                                <label for="location" id="label_location">Location</label>
+                                                <label for="location" id="label_locationt">Location</label>
                                                 <select id="location" class="select2 select" style="width: 100%">
                                                     <option value="MiCasa_ACI">MiCasa ACI</option>
                                                     <option value="MiCasa_GOLF">MiCasa GOLF</option>
@@ -868,7 +938,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="input1_wrapper">
-                                                <label for="arrival" id="label_arrival">Arrivée</label>
+                                                <label for="arrival" id="label_arrivalt">Arrivée</label>
                                                 <div class="input1_inner">
                                                     <input type="text" id="arrival" class="form-control input datepicker" placeholder="Arrivée">
                                                 </div>
@@ -876,7 +946,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="input1_wrapper">
-                                                <label for="departure" id="label_departure">Départ</label>
+                                                <label for="departure" id="label_departuret">Départ</label>
                                                 <div class="input1_inner">
                                                     <input type="text" id="departure" class="form-control input datepicker" placeholder="Départ">
                                                 </div>
@@ -884,7 +954,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="select1_wrapper">
-                                                <label for="adults" id="label_adults">Adultes</label>
+                                                <label for="adults" id="label_adultst">Adultes</label>
                                                 <div class="select1_inner">
                                                     <select id="adults" class="select2 select" style="width: 100%">
                                                         <option value="0">Adultes</option>
@@ -898,7 +968,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="select1_wrapper">
-                                                <label for="children" id="label_children">Enfants</label>
+                                                <label for="children" id="enfantst">Enfants</label>
                                                 <div class="select1_inner">
                                                     <select id="children" class="select2 select" style="width: 100%">
                                                         <option value="0">Enfants</option>
@@ -911,7 +981,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn-form1-submit mt-15" id="check_availability">Vérifier la disponibilité</button>
+                                            <button type="submit" class="btn-form1-submit mt-15" id="check_availabilityt">Reserver</button>
                                         </div>
                                     </div>
                                 </form>
@@ -1041,6 +1111,29 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/translation.js"></script>
+    <script>
+        // Ajout d'un gestionnaire d'événement pour le formulaire
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire
+    
+            // Récupération des valeurs des champs
+            const location = document.getElementById("location").value;
+            const arrival = document.getElementById("arrival").value;
+            const departure = document.getElementById("departure").value;
+            const adults = document.getElementById("adults").value;
+            const children = document.getElementById("children").value;
+            const rooms = document.getElementById("rooms").value;
+    
+            // Affichage des valeurs dans la console
+            console.log("Emplacement:", location);
+            console.log("Arrivée:", arrival);
+            console.log("Départ:", departure);
+            console.log("Adultes:", adults);
+            console.log("Enfants:", children);
+            console.log("Chambres:", rooms);
+        });
+    </script>
+    
     
 </body>
 

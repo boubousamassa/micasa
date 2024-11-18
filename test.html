@@ -1,82 +1,114 @@
-<section class="rooms1 section-padding bg-cream" data-scroll-index="1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-subtitle" id="residenceSubtitle">Résidence MiCasa</div>
-                <div class="section-title" id="roomsTitle">Chambres & Suites Golf</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="item">
-                    <div class="position-re o-hidden">
-                        <img src="img/rooms/1.jpg" alt="">
-                    </div>
-                    <span class="category" id="book1"><a href="rooms2.html">Reserver</a></span>
-                    <div class="con">
-                        <h6 id="price1"><a href="room-details.html">60000fcfa / Nuit</a></h6>
-                        <h5 id="roomTitle1"><a href="room-details.html">Suite Junior</a></h5>
-                        <div class="line"></div>
-                        <div class="row facilities">
-                            <div class="col col-md-7">
-                                <ul>
-                                    <li><i class="flaticon-bed"></i></li>
-                                    <li><i class="flaticon-bath"></i></li>
-                                    <li><i class="flaticon-breakfast"></i></li>
-                                    <li><i class="flaticon-towel"></i></li>
-                                </ul>
-                            </div>
-                            <div class="col col-md-5 text-end">
-                                <div class="permalink"><a href="room-details.html" id="details1">Détails <i class="ti-arrow-right"></i></a></div>
-                            </div>
+<div class="language-selector">
+    <button id="lang-fr" onclick="setLanguage('fr')">Français</button>
+    <button id="lang-en" onclick="setLanguage('en')">English</button>
+</div>
+
+<div class="owl-carousel owl-theme">
+    <!-- Slide 1 -->
+    <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/slider/2.jpg">
+        <div class="v-middle caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h4 id="slide1-title">Hôtel de luxe et meilleur complexe hôtelier</h4>
+                        <h1 id="slide1-subtitle">Profitez d'une expérience de luxe</h1>
+                        <div class="butn-light mt-30 mb-30">
+                            <a href="#" data-scroll-nav="1">
+                                <span id="slide1-button">Chambres & Suites</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Répétez cette structure pour chaque chambre -->
         </div>
     </div>
-</section>
+    <!-- Slide 2 -->
+    <div class="text-center item bg-img" data-overlay-dark="2" data-background="img/slider/3.jpg">
+        <div class="v-middle caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h4 id="slide2-title">Endroit unique pour se détendre et profiter</h4>
+                        <h1 id="slide2-subtitle">La base parfaite pour vous</h1>
+                        <div class="butn-light mt-30 mb-30">
+                            <a href="#" data-scroll-nav="1">
+                                <span id="slide2-button">Chambres & Suites</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="text-center item bg-img" data-overlay-dark="3" data-background="img/slider/1.jpg">
+        <div class="v-middle caption">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h4 id="slide3-title">L'expérience de luxe ultime</h4>
+                        <h1 id="slide3-subtitle">Profitez des meilleurs moments de la vie</h1>
+                        <div class="butn-light mt-30 mb-30">
+                            <a href="#" data-scroll-nav="1">
+                                <span id="slide3-button">Chambres & Suites</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Slider Reservation -->
+<div class="reservation">
+    <a href="tel:8551004444">
+        <div class="icon d-flex justify-content-center align-items-center">
+            <i class="flaticon-call"></i>
+        </div>
+        <div class="call">
+            <span id="reservation-phone">+223 20 29 08 07</span> <br>
+            <span id="reservation-label">Réservation</span>
+        </div>
+    </a>
+</div>
 
 <script>
-function changeLanguage() {
-    const language = document.getElementById("languageSelector").value;
+    const translations = {
+        fr: {
+            "slide1-title": "Hôtel de luxe et meilleur complexe hôtelier",
+            "slide1-subtitle": "Profitez d'une expérience de luxe",
+            "slide1-button": "Chambres & Suites",
+            "slide2-title": "Endroit unique pour se détendre et profiter",
+            "slide2-subtitle": "La base parfaite pour vous",
+            "slide2-button": "Chambres & Suites",
+            "slide3-title": "L'expérience de luxe ultime",
+            "slide3-subtitle": "Profitez des meilleurs moments de la vie",
+            "slide3-button": "Chambres & Suites",
+            "reservation-phone": "+223 20 29 08 07",
+            "reservation-label": "Réservation"
+        },
+        en: {
+            "slide1-title": "Luxury hotel and best hotel resort",
+            "slide1-subtitle": "Enjoy a luxury experience",
+            "slide1-button": "Rooms & Suites",
+            "slide2-title": "Unique place to relax and enjoy",
+            "slide2-subtitle": "The perfect base for you",
+            "slide2-button": "Rooms & Suites",
+            "slide3-title": "The ultimate luxury experience",
+            "slide3-subtitle": "Enjoy the best moments of life",
+            "slide3-button": "Rooms & Suites",
+            "reservation-phone": "+223 20 29 08 07",
+            "reservation-label": "Reservation"
+        }
+    };
 
-    if (language === "en") {
-        // Traduction en anglais
-        document.getElementById("residenceSubtitle").innerText = "MiCasa Residence";
-        document.getElementById("roomsTitle").innerText = "Rooms & Golf Suites";
-
-        // Pour chaque chambre
-        document.getElementById("book1").innerHTML = "<a href='rooms2.html'>Book</a>";
-        document.getElementById("price1").innerHTML = "<a href='room-details.html'>$100 / Night</a>";
-        document.getElementById("roomTitle1").innerHTML = "<a href='room-details.html'>Junior Suite</a>";
-        document.getElementById("details1").innerHTML = "Details <i class='ti-arrow-right'></i>";
-
-        // Répétez pour chaque chambre
-        // Exemple :
-        // document.getElementById("book2").innerHTML = "<a href='rooms2.html'>Book</a>";
-        // document.getElementById("price2").innerHTML = "<a href='room-details.html'>$100 / Night</a>";
-        // document.getElementById("roomTitle2").innerHTML = "<a href='room-details.html'>Senior Suite</a>";
-        // document.getElementById("details2").innerHTML = "Details <i class='ti-arrow-right'></i>";
-    } else if (language === "fr") {
-        // Retour en français
-        document.getElementById("residenceSubtitle").innerText = "Résidence MiCasa";
-        document.getElementById("roomsTitle").innerText = "Chambres & Suites Golf";
-
-        // Pour chaque chambre
-        document.getElementById("book1").innerHTML = "<a href='rooms2.html'>Reserver</a>";
-        document.getElementById("price1").innerHTML = "<a href='room-details.html'>60000fcfa / Nuit</a>";
-        document.getElementById("roomTitle1").innerHTML = "<a href='room-details.html'>Suite Junior</a>";
-        document.getElementById("details1").innerHTML = "Détails <i class='ti-arrow-right'></i>";
-
-        // Répétez pour chaque chambre
-        // Exemple :
-        // document.getElementById("book2").innerHTML = "<a href='rooms2.html'>Reserver</a>";
-        // document.getElementById("price2").innerHTML = "<a href='room-details.html'>60000fcfa / Nuit</a>";
-        // document.getElementById("roomTitle2").innerHTML = "<a href='room-details.html'>Suite Senior</a>";
-        // document.getElementById("details2").innerHTML = "Détails <i class='ti-arrow-right'></i>";
+    function setLanguage(language) {
+        Object.keys(translations[language]).forEach(key => {
+            document.getElementById(key).textContent = translations[language][key];
+        });
     }
-}
+
+    // Set default language to French
+    setLanguage('fr');
 </script>
